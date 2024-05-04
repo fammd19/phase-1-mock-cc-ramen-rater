@@ -1,4 +1,4 @@
-{ 
+{
   "ramens": [
     {
       "id": 1,
@@ -39,6 +39,62 @@
       "image": "./assets/ramen/kojiro.jpg",
       "rating": 6,
       "comment": "Perfect for a cold night."
+    },
+    {
+      "name": "kkj",
+      "restaurant": "zxczc",
+      "image": "csc",
+      "rating": "2",
+      "comment": "cascsa",
+      "id": 6
+    },
+    {
+      "name": "Mack",
+      "restaurant": "zxczc",
+      "image": "csc",
+      "rating": "2",
+      "comment": "n,n,",
+      "id": 7
+    },
+    {
+      "name": "fgd",
+      "restaurant": "dgf",
+      "image": "",
+      "rating": "1",
+      "comment": "",
+      "id": 8
+    },
+    {
+      "name": "Fi",
+      "restaurant": "dgf",
+      "image": "",
+      "rating": "2",
+      "comment": "",
+      "id": 9
+    },
+    {
+      "name": "Fi",
+      "restaurant": "zxczc",
+      "image": "",
+      "rating": "",
+      "comment": "",
+      "id": 10
+    },
+    {
+      "name": "Fi",
+      "restaurant": "zxczc",
+      "image": "",
+      "rating": "",
+      "comment": "",
+      "id": 11
+    },
+    {
+      "name": "Mack",
+      "restaurant": "dgf",
+      "image": "",
+      "rating": "",
+      "comment": "",
+      "id": 12
     }
   ]
 }
