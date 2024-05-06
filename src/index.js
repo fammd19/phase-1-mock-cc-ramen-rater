@@ -5,10 +5,12 @@ function initialise () {
     displayImages()
     showRamen()
     addRamen()
+    document.getElementById("delete-ramen").addEventListener("click", deleteRamen)
 }
 
 function displayImages () {
     let menu = document.getElementById("ramen-menu")
+    menu.innerHTML=""
     fetch("http://localhost:3000/ramens")
     .then(res => res.json())
     .then(json => {
@@ -64,7 +66,30 @@ function addRamen () {
                 comment: new_comment
             }),
         })
+        displayImages()
         document.getElementById("new-ramen").reset()
-    })
-    
+    })    
 }
+
+function deleteRamen () {
+    ramenDisplayed=document.getElementsByClassName("name")[0].innerHTML
+    fetch("http://localhost:3000/ramens")
+    .then(res => res.json())
+    .then(json => {
+        for (const item of json) {
+            if (item.name == ramenDisplayed) {
+                fetch(`http://localhost:3000/ramens/${item.id}`, {
+                    method: "DELETE"
+                })
+                .then(res => {
+                    res.json()
+                    displayImages()
+                })
+            } else {
+                null
+            }
+            }
+        })
+    }
+
+    
